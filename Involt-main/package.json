@@ -9,7 +9,7 @@
     "install:ci": "bash scripts/install-pnpm.sh",
     "dev": "node scripts/run-framework.mjs dev",
     "build": "node scripts/run-framework.mjs build",
-    "start": "vinext start",
+    "start": "node .output/server/index.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
