@@ -25,7 +25,7 @@ export default defineConfig(async () => {
       tailwindcss(),
       vinext(),
       nitro({
-        preset: "vercel",
+        preset: "node",
       }),
       sites({ mockAuth: !managedLinux }),
     ],
